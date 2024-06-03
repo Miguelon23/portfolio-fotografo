@@ -1,0 +1,6 @@
+<div class="albums-container">
+    <div *ngFor="let album of albums" class="album-card">
+        <img [src]="album.imageUrl" [alt]="album.title">
+        <div class="album-title">{{ album.title }}</div>
+    </div>
+</div>
