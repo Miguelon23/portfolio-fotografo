@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { AboutComponent } from "../about/about.component";
+import { ContactComponent } from "../contact/contact.component";
 
 interface Album {
   id: number;
@@ -11,11 +13,11 @@ interface Album {
 }
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+    selector: 'app-home',
+    standalone: true,
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css',
+    imports: [CommonModule, AboutComponent, ContactComponent]
 })
 export class HomeComponent {
   albums: Album[] = [

@@ -1,5 +1,15 @@
-<h1>Daniel Diaz</h1>
-<h2>FOTOGRAFO</h2>
+<!--Home-->
+<div class="title-container">
+  <img class="card-img-home" src="assets/images/perfildani.jpg" alt="DanielDiaz">
+  <div>
+    <h1>Daniel Diaz</h1>
+    <h2>FOTOGRAFO</h2>
+  </div>
+</div>
+
+<!--Lista de Contacto-->
+<app-contact></app-contact>
+
 <div class="albums-container">
     <div 
       *ngFor="let album of albums" 
@@ -12,6 +22,9 @@
       <img [src]="album.imageUrl" [alt]="album.title">
       <div class="album-title">{{ album.title }}</div>
     </div>
-    <button class="view-all-albums" (click)="navigateToAllAlbums()">Ver más..</button>
+    <button class="view-all-albums" (click)="navigateToAllAlbums()">Ver más</button>
   </div>
+
+<!--Acerca de Daniel Diaz-->
+  <app-about></app-about>
   

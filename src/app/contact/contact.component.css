@@ -1,0 +1,29 @@
+.list-contact {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 22px;
+    margin-top: 5px;
+    font-size: 19px;
+}
+
+.list-contact ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-contact li {
+    display: inline;
+}
+
+.list-contact a {
+    text-decoration: none;
+    color: #e6d15c;
+}
+
+.list-contact a:hover {
+    color: #5282b4;
+}

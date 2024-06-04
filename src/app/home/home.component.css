@@ -3,34 +3,53 @@
     src: url("./Ephesis-Regular.ttf") format(truetype);
 }
 
+.title-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+    margin-top: 1px;
+    text-align: left;
+}
+
+
+.card-img-home {
+    padding: 2px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 h1 {
-    color: #DBDBDB;
+    color: #e6d15c;
     font-family: Ephesis-Regular;
     text-align: center;
-    font-size: 70px;
+    font-size: 60px;
     
 }
 
 h2 {
-    color: #DBDBDB;
+    color: #e6d15c;
     text-align: center;
     letter-spacing: 15px;
+    font-size: 25px;
 }
 
 .albums-container {
-    background: #cfdef3;
+    background: #a6bcdb;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 76vh;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 80px;
     transition: all 0.3s ease;
-    padding: 20px;
+    padding: 10px;
+    border-radius: 8px;
 }
 
-.album-card,
-.view-all-albums {
+.album-card {
     position: relative;
     width: 300px;
     height: 400px;
@@ -54,8 +73,8 @@ h2 {
     border-radius: 10px;
 }
 
-.album-card .album-title,
-.view-all-albums .album-title {
+.album-card .album-title, 
+.album-title {
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -75,36 +94,41 @@ h2 {
     transform: scale(0.9);
 }
 
-.view-all-albums {
-    position: relative;
-    justify-content: center;
-    align-items: center;
+.album-card .view-all-button {
+    width: 100%;
     background-color: #333;
-    color: #DBDBDB;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.album-card .view-all-button:hover {
+    background-color: #555;
+}
+
+.view-all-albums {
+    width: 60px;
+    height: 350px;
+    position: relative;
+    background-color: #e6dada;
+    color: #333131;
     margin: 20px;
     padding: 20px 30px;
     border-radius: 10px;
-    transition: background-color 0.3s ease;
-    z-index: 1;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .view-all-albums:hover {
-    background-color: #0056b3;
+    background-color: #e7ecf1;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.view-all-albums::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 50%;
-    background-color: rgba(255, 255, 255, 0.733);
-    transition: background-color 0.3s ease;
-    border-radius: 10px;
-}
 
-.view-all-albums:hover::after {
-    background-color: rgba(255, 255, 255, 0.3);
-}
 
