@@ -2,9 +2,11 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 22px;
-    margin-top: 5px;
+    margin: 0;
     font-size: 19px;
+    position: relative;
+    top: -110px;
+    padding-right: 80px;
 }
 
 .list-contact ul {

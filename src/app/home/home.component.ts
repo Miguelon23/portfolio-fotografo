@@ -21,8 +21,9 @@ interface Album {
 })
 export class HomeComponent {
   albums: Album[] = [
-    { id: 1, title: '', imageUrl: 'assets/images/1.jpeg', link: '/gallery/1'},
-    { id: 2, title: '', imageUrl: 'assets/images/2.jpeg', link: '/gallery/2'}
+    { id: 1, title: '', imageUrl: 'assets/images/paisaje4.jpeg', link: '/gallery/1'},
+    { id: 2, title: '', imageUrl: 'assets/images/4.jpeg', link: '/gallery/2'},
+    { id: 3, title: '', imageUrl: 'assets/images/paisaje5.jpeg', link: '/gallery/3'}
   ];
 
   constructor(private router: Router) {}

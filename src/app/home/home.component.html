@@ -14,15 +14,14 @@
     <div 
       *ngFor="let album of albums" 
       class="album-card"
-      (mouseover)="toggleHover(album, true)"
+      (mouseenter)="toggleHover(album, true)"
       (mouseleave)="toggleHover(album, false)"
       (click)="navigateToAlbum(album.link)"
-      [ngClass]="{'hovered': album.isHovered}"
+      [style.backgroundImage]="'url(' + album.imageUrl + ')'"
     >
-      <img [src]="album.imageUrl" [alt]="album.title">
       <div class="album-title">{{ album.title }}</div>
     </div>
-    <button class="view-all-albums" (click)="navigateToAllAlbums()">Ver más</button>
+    <button class="view-all-albums" (click)="navigateToAllAlbums()">&#x25B6;</button>
   </div>
 
 <!--Acerca de Daniel Diaz-->
