@@ -1,3 +1,3 @@
 # PortfolioFotografo
 
-Porfolio de fotografo profesional, contacto, seccion de noticias y fotos
+Portfolio de fotografo profesional, contacto, seccion de noticias y fotos
