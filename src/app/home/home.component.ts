@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { AboutComponent } from "../about/about.component";
-import { ContactComponent } from "../contact/contact.component";
+import { NavbarComponent } from "../navbar/navbar.component";
+import { FooterComponent } from "../footer/footer.component";
 
 interface Album {
   id: number;
@@ -17,7 +18,7 @@ interface Album {
     standalone: true,
     templateUrl: './home.component.html',
     styleUrl: './home.component.css',
-    imports: [CommonModule, AboutComponent, ContactComponent]
+    imports: [CommonModule, AboutComponent, NavbarComponent, FooterComponent]
 })
 export class HomeComponent {
   albums: Album[] = [
