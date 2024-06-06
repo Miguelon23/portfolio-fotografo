@@ -17,13 +17,13 @@
 
 .about-img{
     position: relative;
-    width: 200px;
+    width: 700px;
     height: 200px;
 }
 
 .about-img img {
-    width: 100px;
-    height: 100px;
+    width: 240px;
+    height: 240px;
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -34,6 +34,7 @@
 }
 
 .title-perfil {
+    font-family: Ephesis-Regular;
     font-size: 36px;
     margin: 10px 0;
 }
