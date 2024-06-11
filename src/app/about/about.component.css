@@ -1,42 +1,57 @@
-.card-perfil {
-    background-color: rgba(41, 63, 85, 0.5);
+.perfil-container {
+    background-color: rgba(41, 63, 85, 0.4);
     color: #e6d15c;
     text-align: left;
-    height: 50vh;
-    margin: auto;
+    height: 80vh;
+    width: 96vw;
+    margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    padding: 10px;
+    padding: 40px;
     box-shadow: 0 0 35px #0009;
     border-radius: 8px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 100px;
 }
 
 .about-img{
-    position: relative;
-    width: 700px;
-    height: 200px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about-img img {
-    width: 240px;
-    height: 240px;
     border-radius: 8px;
     object-fit: cover;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    transition: transform 0.3s ease-in-out;
+}
+
+.img1 {
+    width: 300px;
+    height: 460px;
+    transform: rotate(-5deg)
+}
+
+.img2 {
+    width: 460px;
+    height: 260px;
+    transform: rotate(5deg);
 }
 
 .text-container-perfil {
     flex: 1;
+    margin-left: 30px;
 }
 
 .title-perfil {
     font-family: Ephesis-Regular;
     font-size: 36px;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .subtitle-perfil {
@@ -47,6 +62,6 @@
 
 .content-perfil {
     font-size: 18px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 

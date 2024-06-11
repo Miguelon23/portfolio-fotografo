@@ -1,15 +1,18 @@
 .footer-container {
-    background-color: rgba(41, 63, 85, 0.5);
+    background-color: rgba(41, 63, 85, 0.4);
     color: #e6d15c;
-    padding: 20px;
-    max-width: 100%;
+    padding: 13px;
+    height: 28vh;
+    width: 96vw;
     border-radius: 8px;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .redes-footer {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 6px;
     gap: 40px;
 }
 

@@ -4,13 +4,13 @@
 }
 
 .title-container {
-    background-color: rgba(41, 63, 85, 0.5);
-    height: 35vh;
+    background-color: rgba(41, 63, 85, 0.4);
+    height: 33vh;
     border-radius: 8px;
     display: flex;
     align-items: center;
     gap: 30px;
-    margin: 10px;
+    margin: 20px;
     margin-top: 15px;
     text-align: left;
 }
@@ -40,9 +40,9 @@ h2 {
 }
 
 .albums-container {
-    background-color: rgba(41, 63, 85, 0.5);
+    background-color: rgba(41, 63, 85, 0.4);
     display: flex;
-    width: 97.3vw;
+    width: 96vw;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -89,14 +89,12 @@ h2 {
 .view-all-albums {
     width: 60px;
     height: 350px;
-    background-color: #79a1da;
-    color: #534f4f;
+    background-color: #26508b;
     margin: 20px;
     padding: 20px 30px;
     border-radius: 10px;
     transition: all 0.3s ease;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,9 +102,8 @@ h2 {
 }
 
 .view-all-albums:hover {
-    background-color: #e7ecf1;
+    background-color: #6b8baa;
     transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 480px) {

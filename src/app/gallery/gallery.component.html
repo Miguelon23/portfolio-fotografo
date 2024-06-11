@@ -1,2 +1,18 @@
-<h1>Galeria</h1>
-<p>Otro trabajos</p>
+<div class="gallery-container">
+    <div class="gallery-home">
+        <a [routerLink]="['/']"><img src="assets/images/home1.ico" alt="Inicio"></a>
+    </div>
+    <h1>Galeria de Fotos</h1>
+</div>
+
+<!--Subir foto solo puede quien tenga el rol de fotografo-->
+<div *ngIf="authService.userRole === 'photographer'">
+    <a [routerLink]="['/upload-photo']">Subir Fotos</a>
+</div>
+
+<div class="photos-container">
+    <div *ngFor="let photo of photos">
+        <img [src]="photo" alt="Foto de álbum">
+    </div>
+</div>
+
